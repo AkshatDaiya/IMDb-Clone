@@ -1,0 +1,770 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.contain {
+  width: 100%;
+  display: flex;
+}
+
+.navbar {
+  background: rgba(31, 31, 31, 1);
+}
+
+.Nav_Name {
+  background-color: #f5c518;
+  border-radius: 4px;
+  margin-left: 30px;
+  padding: 8px 0;
+}
+
+.Nav_Name a {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.SearchForm input {
+  border: none;
+  font-size: 20px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.SearchForm input:focus {
+  outline: none;
+}
+
+.SearchForm button {
+  border: none;
+  padding: 5px 5px 2px 10px;
+}
+
+.logBtn .fav button,
+.logBtn .SignBtn button {
+  height: 43px;
+  font-size: 14px;
+  font-weight: 900;
+  background: transparent;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logBtn .SignBtn button .fa-user {
+  color: black;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navItem {
+  padding: 0;
+  margin: 0;
+}
+
+.navItem .list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navItem .list a {
+  color: white;
+  display: block;
+  line-height: 63px;
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.navItem .dropdown {
+  position: absolute;
+  top: 60px;
+  padding-left: 0;
+  right: 27px;
+  opacity: 0;
+  visibility: hidden;
+  padding-top: 6px;
+  background: rgba(31, 31, 31, 1);
+  color: white;
+  text-align: start;
+
+}
+
+.navItem li:hover>.dropdown {
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+
+}
+
+.navItem .dropdown li {
+  position: relative;
+  list-style: none;
+  width: 200px;
+}
+
+.navItem .dropdown li a {
+  padding: 0 15px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.navItem .dropdown li a:hover {
+  background-color: rgba(92, 95, 95, 0.589);
+}
+
+.navItem button {
+  padding: 2px 20px;
+  font-size: 17px;
+  background-color: #b2d530;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.totalWL {
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  background-color: #f5c518;
+}
+
+.logBtn .fav button:hover {
+  background-color: rgba(92, 95, 95, 0.589);
+  border-radius: 5px;
+}
+
+.logBtn .SignBtn button:hover {
+  background-color: rgba(92, 95, 95, 0.589);
+  border-radius: 5px;
+}
+
+.bg_color0 {
+  background-color: black;
+  border: 1px solid black;
+}
+
+.bg_color1 {
+  background-color: white;
+  height: 100%;
+  margin: 0 30px 30px 30px;
+  border: 1px solid white;
+}
+
+.StyleBTN {
+  padding: 0 10px;
+  font-size: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.StyleBTN:hover {
+  background-color: white;
+  color: black;
+  outline: 1px solid;
+}
+
+.StyleBTN1 {
+  font-size: 17px;
+  top: 33px;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #ebebeb;
+  color: #0e63be;
+  height: 70px;
+  transition: all 0.3s ease;
+}
+
+.StyleBTN2 {
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #ebebeb;
+  color: #0e63be;
+  height: 70px;
+  transition: all 0.3s ease;
+  right: 0;
+  bottom: 17px;
+}
+
+.StyleBTN3 {
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  width: 45%;
+  border-radius: 4px;
+  background-color: #ebebeb;
+  color: #0e63be;
+  height: 70px;
+  transition: all 0.3s ease;
+  left: 14px;
+  bottom: 10px;
+}
+
+.StyleBTN4 {
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  width: 45%;
+  border-radius: 4px;
+  background-color: #ebebeb;
+  color: #0e63be;
+  height: 70px;
+  transition: all 0.3s ease;
+  right: 14px;
+  bottom: 10px;
+}
+
+.StyleBTN1:hover,
+.StyleBTN2:hover,
+.StyleBTN3:hover {
+  border: 1px dashed;
+  border-radius: 4px;
+  background-color: #e0dbdb;
+}
+
+.StyleBTN4:hover {
+  border: 1px dashed red;
+  border-radius: 4px;
+  color: red;
+  background-color: #e0dbdb;
+}
+
+.img-hight {
+  height: 64%;
+}
+
+.details {
+  padding-top: 30px;
+  margin: 30px;
+}
+
+.details h3 {
+  font-weight: 660;
+}
+
+.details h1::before {
+  content: "";
+  margin-left: -0.75rem;
+  align-self: flex-start;
+  position: absolute;
+  height: 7.2%;
+  width: 4px;
+  background: #f5c518;
+}
+
+.details h1 {
+  margin-left: 0.75rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.details small {
+  font-size: 16px;
+}
+
+.fas.fa-arrow-up-long {
+  position: fixed;
+  bottom: 50px;
+  right: -20px;
+  height: 44px;
+  width: 70px;
+  font-size: 41px;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.fas.fa-arrow-up-long:hover {
+  height: 60px;
+}
+
+.bg_Color {
+  background: rgb(32, 32, 33);
+  background: linear-gradient(6deg, rgba(32, 32, 33, 1) 52%, rgba(90, 48, 36, 1) 100%);
+  position: relative;
+}
+
+.SinglePostD {
+  display: flex;
+  margin-left: 50px;
+}
+
+.Sdetails h1 {
+  margin-top: 40px;
+  font-size: 50px;
+  color: white;
+  width: 400px;
+}
+
+.Sdetails p {
+  font-weight: 600;
+  color: #a5a8a8;
+}
+
+.Srating {
+  margin-left: 730px;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .Srating {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.Srating h6 {
+  color: #a5a8a8;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.Srating p {
+  font-weight: 600;
+  font-size: 22px;
+  color: white;
+}
+
+.Srating p span {
+  color: #a5a8a8;
+  font-size: 18px;
+}
+
+.singleDimg {
+  margin-left: 50px;
+}
+
+.singleDimg img {
+  width: 350px;
+}
+
+.singleMainD {
+  color: white;
+  width: 600px;
+}
+
+.singleMainD h6 {
+  color: #3a77b9;
+}
+
+.singleMainD .hboIcon .hbo {
+  background-color: white;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.singleMainD .hboIcon img {
+  width: 63px;
+}
+
+.slick-dots li button {
+  display: none;
+}
+
+.gifSetting {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gifSetting img {
+  transform: scale(1.5)
+}
+
+.loginPage {
+  background: linear-gradient(162deg, rgba(206, 205, 201, 1) 27%, rgba(255, 255, 255, 1) 100%);
+  margin-top: 44px;
+}
+
+.loginPage .login {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  position: relative;
+  width: 60rem;
+  height: 422px;
+  margin-bottom: 125px;
+}
+
+.loginWithLinks {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px 50px;
+}
+
+.loginWithLinks h3 {
+  font-weight: 700;
+  margin: 10px 0;
+  padding-top: 15px;
+}
+
+.loginWithLinks a {
+  width: 245px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #555555;
+  padding: 4px;
+  border: 1.5px solid #ddd;
+  border-radius: 4px;
+  margin: 7px;
+  background-color: white;
+  display: flex;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.loginWithLinks a:hover {
+  border: 1.5px solid #1a1919;
+}
+
+.loginWithLinks a span:hover {
+  text-decoration: underline;
+}
+
+.loginWithLinks a .fa-imdb {
+  font-size: 25px;
+  background-color: #f5c518;
+  height: 23px;
+  margin-right: 20px;
+}
+
+.loginWithLinks a .fa-amazon {
+  font-size: 23px;
+  width: 26px;
+  margin-right: 20px;
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.loginWithLinks a .fa-google {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.loginWithLinks a .fa-apple {
+  font-size: 25px;
+  color: black;
+  margin-right: 20px;
+}
+
+.loginWithLinks a .fa-facebook {
+  font-size: 25px;
+  margin-right: 20px;
+  color: #1877f2;
+}
+
+.divider {
+  line-height: 0.5;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.regBtn button {
+  font-weight: 700;
+  padding: 7px;
+  border-radius: 4px;
+  margin: 7px;
+  background-color: #e4b721;
+}
+
+.text {
+  margin: 30px 0 30px 0;
+  width: 550px;
+}
+
+.text h5 {
+  font-weight: 800;
+}
+
+.text .textDetails p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.text .textDetails small {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text .textDetails {
+  margin-bottom: 10px;
+}
+
+.regBtn a {
+  border: none;
+  margin: 0;
+}
+
+.regBtn a button {
+  width: 100%;
+  margin: 0;
+}
+
+.forCenter {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forCenter img {
+  height: 54px;
+}
+
+.formDetails.login {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #80808066;
+  border-radius: 8px;
+  width: 380px;
+  height: 380px;
+  padding: 15px;
+  position: relative;
+}
+
+.formDetails.reg {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #80808066;
+  border-radius: 8px;
+  width: 380px;
+  padding: 15px;
+  position: relative;
+}
+
+.formDetails.login .small:hover {
+  color: red;
+}
+
+.formDetails h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.formDetails label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.formDetails input {
+  height: 30px;
+  border: 1px solid #80808082;
+  border-radius: 3px;
+}
+
+.RegBtn {
+  font-weight: 700;
+  padding: 7px;
+  border-radius: 4px;
+  background-color: #e4b721;
+}
+
+.RegBtn:hover {
+  background-color: white;
+  color: black;
+  outline: 1px solid;
+}
+
+.haveAcc.reg {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 347px;
+  height: 100px;
+  color: gray;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.haveAcc.login {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 347px;
+  height: 100px;
+  color: gray;
+  justify-content: space-evenly;
+}
+
+.haveAcc .loginLink {
+  border: 1px solid #cfc3c3;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.haveAcc .loginLink:hover {
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #e4b721;
+}
+
+.haveAcc .loginLink:hover>button {
+  color: black;
+  font-weight: 700;
+}
+
+.addFavBtn {
+  border: none;
+  width: 40px;
+  height: 45px;
+  background: #00000087;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  transition: all .2s ease-in-out;
+}
+
+.addFavBtn1 {
+  border: none;
+  width: 150px;
+  height: 150px;
+  font-weight: 700;
+  font-size: 150px;
+  background: #b5b5b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.addFavBtn:hover {
+  background-color: #dddddd3b;
+}
+
+.watchlistGB {
+  background: linear-gradient(180deg, rgba(206, 205, 201, 1) 27%, rgba(255, 255, 255, 1) 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.watchlistGB .watchlist {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  width: 60%;
+}
+
+.watchlistGB .watchlist .lable {
+  padding: 15px 25px;
+}
+
+.watchlistGB .watchlist .line {
+  background-color: #eee;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.watchListIMG {
+  height: 270px;
+  width: 100%;
+}
+
+.watchListBlank {
+  height: 100vh;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.watchListBlank .blankContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sortingItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.sortingItems .active {
+  color: #0e93e0;
+}
+
+.sortingItems select {
+  color: #0e93e0;
+  padding: 8px 5px;
+  border-radius: 6px;
+  border: none;
+  outline: 1px dashed;
+  font-size: medium;
+}
+
+
+.sortingItems select:hover {
+  background-color: #cde2ee;
+}
+
+.sortingItems option {
+  background-color: white;
+  color: black;
+}
+
+.sortingItems button {
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  border: none;
+  background: transparent;
+  color: #5e5a5a;
+}
+
+.sortingItems button:hover {
+  background-color: #b1a5a527;
+}
+
+.forCenter .forgotPass {
+  border: 1px solid #80808059;
+  width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.forCenter .forgotPass input {
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid #00000073;
+}
+
+.forCenter .forgotPass button {
+  height: 35px;
+  margin-top: 20px;
+  border-radius: 4px;
+  background-color: #ffc80f;
+}
