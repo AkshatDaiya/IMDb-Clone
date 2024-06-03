@@ -160,6 +160,30 @@
   border: 1px solid white;
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.bg_color1 .HoverEff {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+  transition: all 0.3s ease-in-out;
+}
+
+.bg_color1 .HoverEff:hover {
+  border: 1px solid;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
 .StyleBTN {
   padding: 0 10px;
   font-size: 20px;
@@ -305,31 +329,21 @@
 
 .SinglePostD {
   display: flex;
+  margin-right: 50px;
   margin-left: 50px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .Sdetails h1 {
   margin-top: 40px;
   font-size: 50px;
   color: white;
-  width: 400px;
 }
 
 .Sdetails p {
   font-weight: 600;
   color: #a5a8a8;
-}
-
-.Srating {
-  margin-left: 730px;
-  margin-top: 40px;
-}
-
-@media only screen and (max-width: 1280px) {
-  .Srating {
-    position: absolute;
-    right: 0;
-  }
 }
 
 .Srating h6 {
@@ -403,7 +417,6 @@
   justify-content: center;
   background-color: white;
   position: relative;
-  width: 60rem;
   height: 422px;
   margin-bottom: 125px;
 }
@@ -491,8 +504,7 @@
 }
 
 .text {
-  margin: 30px 0 30px 0;
-  width: 550px;
+  margin: 30px 20px 30px 0;
 }
 
 .text h5 {

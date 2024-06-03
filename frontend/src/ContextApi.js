@@ -1,8 +1,5 @@
 import { createContext } from "react";
 
-let ContextApi = createContext('')
-
-
-
+let ContextApi = createContext("");
 
 export default ContextApi;
